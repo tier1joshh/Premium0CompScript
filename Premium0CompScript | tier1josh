@@ -1,0 +1,246 @@
+
+--████████╗██╗███████╗██████╗░░░███╗░░░░░░░██╗░█████╗░░██████╗██╗░░██╗  
+--╚══██╔══╝██║██╔════╝██╔══██╗░████║░░░░░░░██║██╔══██╗██╔════╝██║░░██║  
+--░░░██║░░░██║█████╗░░██████╔╝██╔██║░░░░░░░██║██║░░██║╚█████╗░███████║  
+--░░░██║░░░██║██╔══╝░░██╔══██╗╚═╝██║░░██╗░░██║██║░░██║░╚═══██╗██╔══██║  
+--░░░██║░░░██║███████╗██║░░██║███████╗╚█████╔╝╚█████╔╝██████╔╝██║░░██║  
+--░░░╚═╝░░░╚═╝╚══════╝╚═╝░░╚═╝╚══════╝░╚════╝░░╚════╝░╚═════╝░╚═╝░░╚═╝  
+--██████╗░██╗░░░██╗███╗░░██╗░██████╗  ██╗░░░██╗░█████╗░██╗░░░██╗██╗
+--██╔══██╗██║░░░██║████╗░██║██╔════╝  ╚██╗░██╔╝██╔══██╗██║░░░██║██║
+--██████╔╝██║░░░██║██╔██╗██║╚█████╗░  ░╚████╔╝░██║░░██║██║░░░██║██║
+--██╔══██╗██║░░░██║██║╚████║░╚═══██╗  ░░╚██╔╝░░██║░░██║██║░░░██║╚═╝
+--██║░░██║╚██████╔╝██║░╚███║██████╔╝  ░░░██║░░░╚█████╔╝╚██████╔╝██╗
+--╚═╝░░╚═╝░╚═════╝░╚═╝░░╚══╝╚═════╝░  ░░░╚═╝░░░░╚════╝░░╚═════╝░╚═╝
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/jr2shiestyGUI/main/jr2shiestyGUI"))()
+
+
+function Script()
+    local Window = Library.CreateLib("0Comp|Script", "DarkTheme")
+
+     --Themes:
+   -- LightTheme
+   -- DarkTheme
+   -- GrapeTheme
+   -- BloodTheme
+   -- Ocean
+   -- Midnight
+   -- Sentinel
+   -- Synapse
+
+
+    local Main = Window:NewTab("•Aimlock/Esp•")
+    local MainSection = Main:NewSection("Main")
+
+
+    -- Script
+
+    MainSection:NewButton("SilentAim", "Press Q to Lock | made by tier1josh.", function()
+        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/Silentaim/main/SilentAim"))()
+    end)
+
+
+    MainSection:NewButton("CamLock", "Press Q to Lock | made by tier1josh.", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/tier1joshh/camlock/main/camlock'),true))()
+    end)
+
+
+    MainSection:NewButton("Anti lock", "Press C to enable anti Anti lock | made by tier1josh.", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/AntiAimlock/main/AntiAimlock"))()
+    end)
+
+
+    MainSection:NewButton("AimViewer", "Views Aim | made by tier1josh.", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/tier1joshh/Aimviewer./main/AimViewer.'),true))()
+    end) 
+
+    local MainSection = Main:NewSection("Esp")
+
+    MainSection:NewButton("Esp | Box, Healthtext, Name, Distance.", "Esp | made by tier1josh.", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/esp3-tierj1osh/main/esp%203%20%7C%20tier1josh"))()
+    end) 
+
+    MainSection:NewButton("Esp | Box, Healthtext, Name.", "Esp | made by tier1josh.", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/esp/main/esp"))()
+    end) 
+
+    MainSection:NewButton("Esp | Box, Healthbar", "Esp | made by tier1josh.", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/esp1-tier1josh/main/esp1%20%7C%20tier1josh"))()
+    end) 
+
+    MainSection:NewButton("Esp | Box ", "Esp | made by tier1josh.", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/esp-2-tier1josh/main/esp2%20%7C%20tier1josh"))()
+    end) 
+
+    local Main = Window:NewTab("•Others• ")
+
+    local MainSection = Main:NewSection("Memory Spoofer")
+
+    MainSection:NewButton("MemorySpoofer| Press once only.", "Spoofs Memory press once only.", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/Memory-Spoofer/main/MemorySpoofer"))()
+    end)
+
+    local MainSection = Main:NewSection("Other")
+
+    MainSection:NewButton("SuperSpeed", "Press X to toggle speed.| V -Speed.| B +Speed", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/Speed/main/Speed"))()
+    end) 
+
+    MainSection:NewButton("NoClip", "Walk Through Objects", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/Noclip/main/Noclip"))()
+    end) 
+
+
+    MainSection:NewButton("Animation Pack", "Free animation pack.| V -Speed.| B +Speed", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/Animation-pack/main/Animation%20pack"))()
+    end) 
+
+    local MainSection = Main:NewSection("Avatar Changer")
+
+    MainSection:NewButton("Headless", "Gives you fake headless", function()
+    	game.Players.LocalPlayer.Character.Head.Transparency = 1
+	game.Players.LocalPlayer.Character.Head.Transparency = 1
+	for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+		if (v:IsA("Decal")) then
+			v.Transparency = 1
+		end
+	end
+end)
+
+MainSection:NewButton("Korblox", "Gives you fake korblox", function()
+    local ply = game.Players.LocalPlayer
+	local chr = ply.Character
+	chr.RightLowerLeg.MeshId = "902942093"
+	chr.RightLowerLeg.Transparency = "1"
+	chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	chr.RightFoot.MeshId = "902942089"
+	chr.RightFoot.Transparency = "1"
+end)
+
+local MainSection = Main:NewSection("Change Fov")
+
+MainSection:NewToggle("Fov 120", "ToggleInfo", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 75
+    end
+end)
+
+MainSection:NewToggle("Fov 100", "ToggleInfo", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 100
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 75
+    end
+end)
+
+MainSection:NewToggle("Fov 95", "ToggleInfo", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 95
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 75
+    end
+end)
+
+MainSection:NewToggle("Fov 85", "ToggleInfo", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 85
+    else
+        game.Workspace.CurrentCamera.FieldOfView = 75
+    end
+end)
+
+
+    local Main = Window:NewTab("•Teleport•")
+    local MainSection = Main:NewSection("Teleport")
+
+    MainSection:NewTextBox("Player Username", "Enter EXACT username to teleport", function(username)
+        _G.targetUsername = username
+    end)
+    
+    MainSection:NewButton("Teleport", "Click to teleport", function()
+     local Players = game:GetService("Players")
+     local player = Players.LocalPlayer
+     local targetPlayer = Players:FindFirstChild(_G.targetUsername)
+     if targetPlayer and targetPlayer.Character then
+         player.Character.HumanoidRootPart.CFrame = targetPlayer.Character.HumanoidRootPart.CFrame
+     else
+         print("Target player not found or does not have a character.")
+     end
+ end) 
+
+ local MainSection = Main:NewSection("GunShops")
+
+ MainSection:NewButton("Uphill Guns Teleport", "tp uphill", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(479.781, 48.078, -619.247)
+end)
+
+MainSection:NewButton("DownHill Guns Teleport", "Tp Downhill", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-575.928, 8.32231, -729.556)
+end)
+
+local MainSection = Main:NewSection("Guns")
+
+ MainSection:NewButton("Double barrel", "tp db", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1043.91, 21.7575, -258.886)
+end)
+
+
+MainSection:NewButton("Revolver Teleport", "tp rev", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-642.597, 21.7575, -123.507)
+end)
+
+local MainSection = Main:NewSection("Places")
+
+MainSection:NewButton("Admin Base", "tp admin base", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-869.554, -38.3917, -598.2)    
+end)
+
+MainSection:NewButton("Bank", "Tp Bank", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-431.683, 22.9708, -284.988)
+end)
+
+MainSection:NewButton("UFO", "tp ufo", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(81.618, 139.007, -682.725)
+end)
+
+MainSection:NewButton("School", "tp School", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-654.25, 21.8825, 281)    
+end)
+
+MainSection:NewButton("Casino", "tp casino", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-992.894, 24.6075, -157.529)    
+end)
+
+
+    local Main = Window:NewTab("•KeyBind•")
+    local MainSection = Main:NewSection("KeyBind")
+
+    MainSection:NewKeybind("KeybindText", "Change Keybind to toggle Gui", Enum.KeyCode.Z, function()
+        Library:ToggleUI()
+    end)
+
+    -- Credits
+
+
+    local Credits = Window:NewTab("•Credits•")
+    local CreditsSection = Credits:NewSection(" Credits to | .gg/z4XD93xHjQ") 
+
+    CreditsSection:NewLabel("•yvng.jad#4989•| developer")
+
+    CreditsSection:NewLabel("•jr2shiesty#0001•| Gui creator")
+
+
+end
+
+if game.PlaceId == 2788229376 then
+    Script()
+end 
+
+
+setfpscap(10000)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tier1joshh/ChatSpy/main/ChatSpy"))()
